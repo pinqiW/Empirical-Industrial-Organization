@@ -3,7 +3,7 @@ clear
 
 global rdraws p x g sj z w s0 m
 
-temp = xlsread('ps1data','ps1data','A2:J201');
+temp = xlsread('data','1data','A2:J201');
 rdraws = load('rdraws');
 obs=temp(:,1); m=temp(:,2); p=temp(:,3); x=temp(:,4); g=temp(:,5); sj=temp(:,6); sjg=temp(:,7); 
 s0=temp(:,8); w=temp(:,9); z=temp(:,10);
@@ -204,9 +204,7 @@ SE = sqrt(diag(inv(Gamma'*inv(varGj)*Gamma)));
 [betahat SE]
 
 
-%------------------------------------------%
-%	QUESTION 9
-%------------------------------------------%
+
 
 
 
